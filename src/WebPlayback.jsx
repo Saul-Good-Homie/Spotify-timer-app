@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import SpotifyGetPlaylists from './Components/SpotifyGetPlaylists/SpotifyGetPlaylists';
+import SpotifyGetPodcasts from './Components/SpotifyGetPodcasts/SpotifyGetPodcasts';
 
 const track = {
     name: "",
@@ -98,7 +100,19 @@ function WebPlayback(props) {
                                 &gt;&gt;
                             </button>
                         </div>
+                        
                     </div>
+                    <div className="content-container">
+                    <div className="playlists">
+                        <SpotifyGetPlaylists />
+                    </div>
+                    <div className="podcasts">
+                        <SpotifyGetPodcasts />
+                    </div>
+
+                    </div>
+                 
+                  
                 </div>
             </>
         );
